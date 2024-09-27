@@ -4,6 +4,7 @@ This project allows you to create, share, and discover custom themes for shadcn 
 
 ![hero](/public/og.png)
 
+
 ## How to Add Your Theme
 
 1. Fork the repository
@@ -17,27 +18,40 @@ Each entry in the `Registries` array should be an object with the following fiel
 
 ### Basic Information
 
-- `title`: A concise, descriptive name for your theme.
-- `searchDescription`: A brief description of your theme, focusing on its key features or design philosophy.
-- `tags`: An array of relevant keywords to help users find your theme.
-- `slug`: A unique identifier for your theme, typically a lowercase, hyphenated version of the title.
-- `createdAt`: The date your theme was created, in the format `new Date(YYYY, M-1, D)`.
+| Property            | Description                                                  |
+| ------------------- | ------------------------------------------------------------ |
+| `title`             | A concise, descriptive name for your theme.                  |
+| `searchDescription` | A brief descirption of your theme, focusing on its key features or design philosphy |
+| `tags`              | An array of relevant keywords to help users find your theme. |
+| `slug`              | A unique identifier for your theme, typically a lowercase, hyphenated version of title. |
+| `createdAt`         | The date your theme was created, in the format               |
+|                     | e.g. `new Date(YYYY, M-1, D)`                                |
+
+
 
 ### Registry Information
 
-- `registry`: An object containing links and information about your theme:
-  - `github_markdown`: A link to the markdown file with detailed documentation for your theme.
-    - Note: In your markdown documentation, it's highly recommended to include a working GIF that demonstrates your custom theme in action. This visual representation helps users quickly understand the look and feel of your theme.
-  - `github_registry`: A link to the JSON file containing your theme's configuration.
-  - `github_repo`: A link to the GitHub repository where your theme is hosted.
-  - `repo_website`: (Optional) A link to a demo website showcasing your theme.
+`registry`: An object containing links and information about your theme:
+
+| Property                             | Description                                                  |
+| ------------------------------------ | ------------------------------------------------------------ |
+| `github_markdown`                    | A link to the markdown file with detailed documentation for your theme.<br/> **NOTE:** In your markdown documentation, it's highly recommended to include a working GIF that demonstrates your custom theme in action. This visual representation helps users quickly understand the look and feel of your theme. |
+| `github_registry`                    | A link to the JSON file containing your theme's configuration. |
+| `github_repo`                        | A link to the GitHub repository where your theme is hosted.  |
+| `repo_website`<br />**(*Optional*)** | A link to a demo website showcasing your theme.              |
+
+
 
 ### Author Information
 
-- `authors`: An array of objects, each representing a contributor to the theme:
-  - `name`: The author's name or username.
-  - `url`: A link to the author's website or social media profile.
-  - `avatar`: A link to the author's avatar image.
+`authors`: An array of objects, each representing a contributor to the theme:
+
+| Property | Description                                             |
+| -------- | ------------------------------------------------------- |
+| `name`   | The author's name or username.                          |
+| `url`    | A link to the author's website or social media profile. |
+| `avatar` | A link to the author's avatar image.                    |
+
 
 ## Example Entry
 
